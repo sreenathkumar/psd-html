@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anncare Equipment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/9afcf8ed9b.js" crossorigin="anonymous"></script>
+  <script src="./tailwind.config.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./index.js"></script>
+</head>
+
+<body class="bg-gray-100 font-heading">
+
+  <!-- top bar -->
+  <div class="hidden md:flex justify-center items-center gap-5 py-6 bg-[#020e28]">
+    <a href="tel:+1800229933786-842-0320" class="flex items-center gap-5 text-[#e1e1e1]"><i
+        class="fa-solid fa-phone-volume text-xl text-primary"></i></i>786-842-0320</a>
+    <span class="text-[#e1e1e1]">|</span>
+    <a href="mailto:sales@anncarequipment.com" class="flex items-center gap-5 text-[#e1e1e1]"><i
+        class="fa-regular fa-envelope text-xl text-primary"></i>sales@anncarequipment.com</a>
+  </div>
+
+  <!-- navigation bar -->
+  <header class="bg-white">
+    <div class="container flex justify-between items-center text-center mx-auto p-2.5 md:p-0">
+      <a>
+        <img src="./assets/images/logo.png" class="max-w-[137px] max-h-[70px]" alt="logo">
+      </a>
+      <div class="flex gap-10 items-center">
+        <nav class="hidden lg:flex justify-center items-center gap-9">
+          <a href="#"
+            class="py-12 text-secondary border-b-2 border-secondary active:border-b-[1px] active:text-red hover:underline">Home</a>
+          <a href="#" class="py-12 active:border-b-[1px] active:text-red hover:underline">About</a>
+          <a href="#" class="py-12 active:border-b-[1px] active:text-red hover:underline">Brands</a>
+          <a href="#" class="py-12 active:border-b-[1px] active:text-red hover:underline">Parts</a>
+          <a href="#" class="py-12 active:border-b-[1px] active:text-red hover:underline">Equipment</a>
+          <a href="#" class="py-12 active:border-b-[1px] active:text-red hover:underline">Contact</a>
+        </nav>
+        <button
+          class="text-gray-100 py-3 px-3 bg-gray-600 bg-gradient-to-r from-secondary to-primary rounded-full hidden lg:flex lg:gap-2"><img
+            src="/assets/images/calculator.png" alt="calculator-image"> Need
+          Estimate?</button>
+        <button id="mobile-menu-toggle" class="block lg:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="hidden md:hidden">
+      <a href="#"
+        class="block py-2 px-4 text-secondary border-b-2 border-secondary active:border-b-[1px] active:text-red hover:underline">Home</a>
+      <a href="#" class="block py-2 px-4 active:border-b-[1px] active:text-red hover:underline">About</a>
+      <a href="#" class="block py-2 px-4 active:border-b-[1px] active:text-red hover:underline">Brands</a>
+      <a href="#" class="block py-2 px-4 active:border-b-[1px] active:text-red hover:underline">Parts</a>
+      <a href="#" class="block py-2 px-4 active:border-b-[1px] active:text-red hover:underline">Equipment</a>
+      <a href="#" class="block py-2 px-4 active:border-b-[1px] active:text-red hover:underline">Contact</a>
+      <button
+        class="w-full flex gap-2 justify-center text-gray-100 py-3 px-3 bg-gray-600 bg-gradient-to-r from-secondary to-primary rounded-full mt-4"><img
+          src="/assets/images/calculator.png" alt="calculator-image">
+        Need
+        Estimate?</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- hero section -->
+    <section class="bg-[url('./assets/images/hero-bg.png')] bg-center bg-cover">
+      <div class="container flex justify-between items-center gap-6 mx-auto p-10 lg:p-0">
+        <div>
+          <h1 class="text-[32px] text-gray-100 font-heading font-bold md:text-[64px]"><span
+              class="text-secondary">GROW</span> YOUR<br>
+            BUSINESS <span class="text-primary">WITH<br> ANNCAR</h1></span>
+          <p class="text-[16px] text-para md:text-[32px]">HIGH QUALITY HEAVY EQUIPMENT<br>SPARE PARTS
+            SUPPLIER</p>
+        </div>
+        <div class="w-1/2 hidden md:block">
+          <!-- <img src="./assets/images/hero-slide-image-1.png" alt="slider-image"> -->
+          <div class="relative overflow-hidden">
+            <div class="slides flex transition-transform duration-500 ease-in-out">
+              <img src="./assets/images/hero-slide-image-1.png" class="w-full" alt="Slide 1">
+              <img src="./assets/images/hero-slide-image-2.png" class="w-full" alt="Slide 2">
+              <img src="./assets/images/hero-slide-image-1.png" class="w-full" alt="Slide 1">
+            </div>
+            <div class="dots flex justify-center mt-4 space-x-2">
+              <span class="dot h-4 w-4 bg-gray-400 rounded-full cursor-pointer"></span>
+              <span class="dot h-4 w-4 bg-gray-400 rounded-full cursor-pointer"></span>
+              <span class="dot h-4 w-4 bg-gray-400 rounded-full cursor-pointer"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature section -->
+    <section class="px-2.5 md:px-0 py-16 md:py-[104px] ">
+      <div
+        class="container flex flex-wrap divide-y-2 divide-gray-200 shadow-custom mx-auto  lg:flex-nowrap lg:divide-x-2 lg:divide-y-0 lg:p-0">
+        <div class="flex flex-col gap-6 p-6 md:p-10">
+          <div class="flex gap-11 ">
+            <img class="max-w-[75px] max-h-[69px]" src="./assets/images/high-speed.png" alt="high-speed">
+            <h2 class="text-[20px] md:text-[30px] font-bold">Fast<br>Response</h2>
+          </div>
+          <p class="text-base">
+            For most part requests, we answer within 1hr (standard quote response time less than 24hrs).
+          </p>
+        </div>
+        <div class="flex flex-col gap-6 p-6 lg:p-10 ">
+          <div class="flex gap-11 ">
+            <img class="max-w-[75px] max-h-[69px]" src="./assets/images/available.png" alt="available">
+            <h2 class="text-[20px] lg:text-[30px] font-bold">Large<br>Availability</h2>
+          </div>
+          <p class="text-base">
+            We offer a wide range of original/genuine and aftermarket parts for Komatsu®, JCB®, and Caterpillar®.
+          </p>
+        </div>
+        <div class="flex flex-col gap-6 p-6 lg:p-10">
+          <div class="flex gap-11 ">
+            <img class="max-w-[75px] max-h-[69px]" src="./assets/images/worldwide.png" alt="worldwide">
+            <h2 class="text-[20px] lg:text-[30px] font-bold">Worldwide<br>Shipping</h2>
+          </div>
+          <p class="text-base">
+            We offer a wide range of original/genuine and aftermarket parts for Komatsu®, JCB®, and Caterpillar®.
+          </p>
+        </div>
+      </div>
+      <div
+        class="container w-fit flex flex-col md:flex-row md:justify-start justify-center items-center gap-10 md:gap-[72px] mx-auto mt-[88px]">
+        <img src="./assets/images/why anncar.png" alt="why anncar">
+        <div class="flex flex-col items-center lg:items-start">
+          <h2 class="text-[32px] lg:text-[36px] text-[#004377] font-bold "><span class="text-secondary">WHY</span>
+            ANNCAR</h2>
+          <span class="h-0.5 w-[112px] bg-primary"></span>
+          <p class="max-w-[526px] mt-8 text-center lg:text-left">We have partnered with many suppliers and have the
+            ability to acquire thousands
+            of spare parts for your heavy machinery. By utilizing our large availability of genuine and aftermarket
+            spare parts, and our extensive supplier network, you are sure to find the parts you need.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- parts section -->
+    <section class="bg-[url('./assets/images/parts-section-bg.png')] bg-center bg-cover py-10">
+      <div class="container flex flex-col gap-[53px] px-2.5 lg:p-0 mx-auto">
+        <div class="flex flex-col md:flex-row gap-14 lg:gap-[126px] w-fit mx-auto">
+          <div>
+            <img src="./assets/images/spare-parts.png" class="mb-5" alt="spare-parts">
+            <div class="flex flex-col">
+              <h2 class="text-[30px] text-gray-100 font-bold mb-4">ENGINE <span class="text-secondary">PARTS</span>
+              </h2>
+              <span class="h-0.5 w-[112px] bg-primary"></span>
+              <p class="max-w-[460px] mt-[18px] text-gray-100">Anncar has an extensive coverage of Engine Replacement
+                Parts
+                for Komatsu®,
+                JCB®, Caterpillar®, and other brands. We provide quality solutions to our customers needs and ensure
+                optimum performance and durability in each specific application. <a href="#" class="font-semibold">LEARN
+                  MORE ></a></p>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/images/bulldozer.png" class="mb-5" alt="bulldozer">
+            <div class="flex flex-col">
+              <h2 class="text-[30px] text-gray-100 font-bold mb-4">GROUND ENGAGING <span
+                  class="text-secondary">PARTS</span>
+              </h2>
+              <span class="h-0.5 w-[112px] bg-primary"></span>
+              <p class="max-w-[460px] mt-[18px] text-base text-gray-100">The wear of Ground Engaging Tools (GET) results
+                in high costs, down time and operational inefficiency. Choosing the right Ground Engaging Tools can make
+                a big difference in your operation’s productivity and profitability. Anncar offers a wide range of
+                quality Ground Engaging Tools for a variety of equipment manufactures like CATERPILLAR®, KOMATSU®, and
+                JCB®. <a href="#" class="font-semibold">LEARN
+                  MORE ></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-14 lg:gap-[126px] w-fit mx-auto">
+          <div>
+            <img src="./assets/images/Vector Smart Object.png" class="mb-5" alt="Vector Smart Object">
+            <div class="flex flex-col">
+              <h2 class="text-[30px] text-gray-100 font-bold mb-4">UNDERCARRIAGE <span
+                  class="text-secondary">PARTS</span>
+              </h2>
+              <span class="h-0.5 w-[112px] bg-primary"></span>
+              <p class="max-w-[460px] mt-[18px] text-gray-100">Undercarriage parts are usually the most expensive parts
+                when it comes to the maintenance of your crawler equipment. This means you need it done correctly,
+                quickly and at a competitive price. With the help of our experienced Sales Team, we can help you to find
+                the right parts with the highest quality, and get them to you as quickly and economically as possible.
+                <a href="#" class="font-semibold">LEARN
+                  MORE ></a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/images/mics-icon.png" class="mb-5" alt="mics-icon">
+            <div class="flex flex-col">
+              <h2 class="text-[30px] text-gray-100 font-bold mb-4">MICS <span class="text-secondary">PARTS</span>
+              </h2>
+              <span class="h-0.5 w-[112px] bg-primary"></span>
+              <p class="max-w-[460px] mt-[18px] text-gray-100">Anncar has a wide range of JCB®, Komatsu®, and
+                Caterpillar® miscellaneous repair and replacement parts. Since we only source from the best and most
+                trusted names in the industry, you can rest assured that we have the right part at the right price and
+                the
+                quality you expect. <a href="#" class="font-semibold">LEARN
+                  MORE ></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- top brands section -->
+    <section class="py-16">
+      <div class="container flex mx-auto gap-6 lg:gap-[126px] px-2.5 lg:px-0 ">
+        <div class="flex flex-col justify-center items-start gap-[19px] md:w-1/2">
+          <h2 class="text-[32px] lg:text-[36px] text-[#004377] uppercase font-bold ">We sell the <span
+              class="text-secondary">TOP
+              Brands</span></h2>
+          <span class="h-0.5 w-[112px] bg-primary mb-10"></span>
+          <div class="grid grid-cols-1 gap-[50px] wrap lg:grid-cols-2">
+            <div>
+              <h3 class="text-[20px] font-bold ">KOMATSU®</h3>
+              <p>We offer a wide range of original/genuine and aftermarket parts for Komatsu®, JCB®,
+                and Caterpillar®. We have partnered with many suppliers and have the ability to acquire thousands of
+                spare
+                parts for your heavy machinery. By utilizing our large availability of genuine and aftermarket spare
+                parts,
+                and our extensive supplier network, you are sure to find the parts you need.</p>
+            </div>
+            <div>
+              <h3 class="text-[20px] font-bold ">CAT®</h3>
+              <p>Buy genuine or aftermarket parts, engine parts and other common repair parts to avoid down time.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-[20px] font-bold ">JCB®</h3>
+              <p>Anncar offers a wide range of genuine and aftermarket parts to minimize the downtime of your machine.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="hidden md:flex justify-center items-center gap-10 mt-10 w-1/2">
+          <img src="./assets/images/brands-section-image.png" alt="brands-section-image">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- call to action section -->
+    <section class="bg-[url('./assets/images/contact-section-bg.png')] bg-center bg-cover py-20">
+      <div class="container md:grid md:grid-cols-12 items-center mx-auto px px-10 md:px-0 ">
+        <img class="col-start-1 col-end-8 row-span-full min-h-[400px] hidden md:flex " src="./assets/images/cta-bg.png"
+          alt="call to action background image">
+        <div class="px-9 py-[54px] md:col-start-5 md:col-end-13 row-span-full flex flex-col items-start bg-[#141d32]">
+          <h2 class="text-[32px] md:text-[36px] text-[#007dff] uppercase font-bold ">We have the part <span
+              class="text-secondary">you
+              need</span></h2>
+          <p class="text-base text-gray-100 my-6">We offer a vast selection of new aftermarket, rebuilt and used parts
+            for
+            Caterpillar®, Komatsu®, JCB® and other popular heavy equipment manufacturers.</p>
+          <button
+            class="uppercase text-base text-gray-100 font-bold px-[18px] py-[12px] rounded-full bg-[#007dff]">Request
+            Part</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-[#020e28] pt-12">
+      <div class="container mx-auto px-10 md:px-2.5 mb-6">
+        <img class="md:mx-auto mb-14" src="./assets/images/logo.png" alt="logo">
+        <div class="flex flex-wrap gap-y-14 gap-x-6 md:justify-center lg:justify-between  lg:flex-nowrap">
+          <div class="text-gray-100 max-w-[248px]">
+            <h3 class="text-[20px]  font-medium uppercase mb-8">GROW WITH ANNCAR</h3>
+            <p class="text-sm">We are dedicated to the sales of heavy machinery spare parts for KOMATSU ®, JCB ®, and
+              CATERPILLAR </p>
+            <ul class="flex gap-2 mt-4">
+              <li>
+                <a href="facebook.com"
+                  class="text-gray-100 bg-[#000818] w-8 h-8 flex items-center justify-center hover:text-primary">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="instagram.com"
+                  class="text-gray-100 bg-[#000818] w-8 h-8 flex items-center justify-center hover:text-primary">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="twitter.com"
+                  class="text-gray-100 bg-[#000818] w-8 h-8 flex items-center justify-center hover:text-primary">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="linkedin.com"
+                  class="text-gray-100 bg-[#000818] w-8 h-8 flex items-center justify-center hover:text-primary">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="text-gray-100 max-w-[248px]">
+            <h3 class="text-[20px] font-medium uppercase mb-8">Get In Touch</h3>
+
+            <ul class="flex flex-col gap-4 mt-4">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-phone-volume text-secondary"></i>
+                <span class="text-gray-100 text-sm">+1 786.842.0320</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-regular fa-envelope text-secondary"></i>
+                <span class="text-gray-100 text-sm">sales@anncarequipment.com</span>
+              </li>
+              <li class="flex gap-2">
+                <i class="fa-solid fa-location-dot text-secondary"></i>
+                <span class="text-gray-100 text-sm">
+                  7275 NW 68th Street, Bay #9 Miami, FL 33166</span>
+              </li>
+            </ul>
+          </div>
+          <div class="text-gray-100 max-w-[248px]">
+            <h3 class="text-[20px] font-medium uppercase mb-8">Useful Links</h3>
+            <ul class="flex flex-col gap-4 mt-4">
+              <li class="text-gray-100 text-sm">Engine Parts</li>
+              <li class="text-gray-100 text-sm">Ground Engaging Tools</li>
+              <li class="text-gray-100 text-sm">Undercarriage Parts</li>
+              <li class="text-gray-100 text-sm">Miscellaneous Parts</li>
+            </ul>
+          </div>
+          <div class="text-gray-100 max-w-[248px]">
+            <h3 class="text-[20px]  font-medium uppercase mb-8">Get Free Estimate</h3>
+            <p class="text-sm mb-4">Fill out the form below and request a free and secure quote.</p>
+            <button
+              class="text-gray-100 text-sm font-bold py-3 px-3 bg-gray-600 bg-gradient-to-r from-secondary to-primary  rounded-full">Request
+              A Quote</button>
+          </div>
+        </div>
+      </div>
+      <div class="text-xs text-gray-100 text-center py-3 bg-[#000818]">Copyright ©tradella international 2020</div>
+    </footer>
+  </main>
+
+</body>
+
+</html>

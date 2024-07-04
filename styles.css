@@ -1,0 +1,28 @@
+@media (max-width: 1024px) {
+    .hidden {
+      display: none;
+    }
+  
+    #mobile-menu {
+      display: none;
+      flex-direction: column;
+      align-items: start;
+      background-color: white;
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    #mobile-menu a {
+      width: 100%;
+      text-align: left;
+    }
+  
+    #mobile-menu-toggle {
+      display: block;
+    }
+  
+    #mobile-menu.open {
+      display: flex;
+    }
+  }
+  
